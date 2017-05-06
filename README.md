@@ -24,6 +24,8 @@ git clone git@github.com:ubbcou/doubanV2.git
 
 *其中有个电影id（搏击俱乐部）豆瓣没有更新或者其他原因，数据缺失而无法显示。*
 
+*首图GIF*
+
 ![test02.gif](http://upload-images.jianshu.io/upload_images/4166325-17cda808e863ebb1.gif?imageMogr2/auto-orient/strip)
 
 
