@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="top-title">豆瓣电影Top250</view>
+  <scroll-view scroll-y scroll-with-animation="true">
+    <navigator url="../detail/detail?id={{ item.id }}"  wx:for="{{ movieTop250.subjects }}" wx:key="*this">
+      <view class="subject">
+        <view class="item-img" ><image src="{{ item.images.small }}"></image></view>
+        <view class="item-info">
+          <view class="item-title">{{ item.title }}{{index}}</view>
+          <view class="item-subTitle">{{ item.original_title }}({{ item.year }})</view>
+          <view class="item-directors" wx:for="{{ item.directors }}" wx:key="*this">{{ item.name }}</view>
+          <text class="item-rating">{{ item.rating.average }}</text>
+        </view>
+      </view>
+    </navigator>
+  </scroll-view>
+  <view class="top-title" bindtap="getMore">{{ more }}</view>
+</view>

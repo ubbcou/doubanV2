@@ -1,0 +1,52 @@
+/**app.wxss**/
+page {
+  height: 100%;
+  font-family: "微软雅黑";
+  background-color: #fff;
+}
+.container {
+  height: 100%;
+}
+.top-title {
+    height: 100rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2rpx solid #999;
+    font-weight: bold;
+    color: #777;
+}
+.subject {
+    padding: 40rpx;
+    border-bottom: 1rpx solid #ccc;
+}
+.item-img {
+    height: 100%;
+    float: left;
+    margin-right: 20rpx;
+}
+.item-img image{
+    width: 130rpx;
+    height: 130rpx;
+    vertical-align: middle;
+}
+.item-info {
+    position: relative;
+    margin-left: 150rpx;
+}
+.item-title, .item-subTitle, .item-directors {
+    font-size: 30rpx;
+    margin-bottom: 15rpx;
+}
+.item-subTitle {
+    color: #555;
+}
+.item-directors {
+    color: #333;
+}
+.item-rating {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #d71b29;
+}

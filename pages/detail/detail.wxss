@@ -1,0 +1,59 @@
+/* pages/detail/detail.wxss */
+.movImg {
+    background-color: #493322;
+    padding: 50rpx;
+}
+.movImg image{
+    width: 510rpx;
+    margin: 0 auto;
+    display: block;
+}
+.subInfo, .summary{
+    margin: 50rpx;
+}
+.subInfo {
+    position: relative;
+}
+.info {
+    font-size: 25rpx;
+    display: flex;
+    flex-direction: column;
+    color: #a3a3a3;
+}
+.title {
+    font-size: 40rpx;
+    font-weight: 300;
+    color: #000;
+    margin-bottom: 30rpx;
+}
+.rating {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 1rpx solid #f1f1f1;
+    box-shadow: 0 0 30rpx #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 25rpx;
+    height: 150rpx;
+    width: 150rpx;
+}
+.rat-txt {
+    color: #a3a3a3;
+}
+.average {
+    font-size: 45rpx;
+}
+.smr-txt {
+    font-size: 35rpx;
+    color: #a1a1a1;
+    margin-bottom: 15rpx;
+}
+.summary-txt {
+    font-size: 35rpx;
+    /*height: 230rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;*/
+}

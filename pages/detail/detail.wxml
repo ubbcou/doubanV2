@@ -1,0 +1,28 @@
+<!--pages/detail/detail.wxml-->
+<!--<view>pages/detail/detail.wxml</view>-->
+<!--<view>电影ID：{{ id }}</view>-->
+<!--<view class="">{{ movieDetail.title }}</view>-->
+<!--<view class="">{{ movieDetail.summary }}</view>-->
+<view class="videoSub" id="videoSub">
+    <view class="movImg"><image src="{{ movieDetail.images.large }}"></image></view>
+    <view class="subInfo">
+        <view class="info">
+            <text class="title">{{ movieDetail.title }}</text>
+            <view>
+                <text>{{movieDetail.year}}</text>
+                <text wx:for="{{ movieDetail.genres }}" wx:key="*this"> / {{ item }}</text>
+            </view>
+            <text class="original">原名：{{ movieDetail.original_title }}</text>
+            <text wx:for="{{ movieDetail.countries }}" wx:key="*this" wx:if="{{index==0}}">上映地点：{{ item }}</text>
+        </view>
+        <view class="rating">
+            <text class="rat-txt">豆瓣评分</text>
+            <text class="average">{{ movieDetail.rating.average }}</text>
+            <text class="rat-txt">{{ movieDetail.ratings_count }}人</text>
+        </view>
+    </view>
+    <view class="summary">
+        <view class="smr-txt">简介</view>
+        <view class="summary-txt">{{ movieDetail.summary }}</view>
+    </view>
+</view>

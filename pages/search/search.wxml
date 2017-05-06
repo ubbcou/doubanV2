@@ -1,0 +1,23 @@
+<!--logs.wxml-->
+<view class="container">
+  <view class="search">
+    <text class="schIco"></text>
+    <input class="schIpt" bindinput="sendFn" placeholder="请输入关键字" />
+    <text class="schBtn" bindtap="getMovies">搜索</text>
+  </view>
+  <scroll-view scroll-y scroll-with-animation="true">
+    <navigator url="../detail/detail?id={{ item.id }}"  wx:for="{{ movies.subjects }}" wx:key="*this">
+      <view class="subject">
+        <view class="item-img" ><image src="{{ item.images.small }}"></image></view>
+        <view class="item-info">
+          <view class="item-title">{{ item.title }}</view>
+          <view class="item-subTitle">{{ item.original_title }}({{ item.year }})</view>
+          <view class="item-directors" wx:for="{{ item.directors }}" wx:key="*this">
+            {{ item.name }}
+          </view>
+          <text class="item-rating">{{ item.rating.average }}</text>
+        </view>
+      </view>
+    </navigator>
+  </scroll-view>
+</view>
