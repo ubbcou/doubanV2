@@ -13,7 +13,7 @@ Page({
       mask: true,
       success: function () {
         wx.request({
-          // /v2/movie/search?q={text}
+          // /v2/movie/search?q=text
           url: 'https://api.douban.com/v2/movie/search', 
           data: {
             q: text
@@ -22,7 +22,7 @@ Page({
               'content-type': 'json'
           },
           success: function(res) {
-            wx.hideLoading()
+            wx.hideLoading();
             if(res.data.total == 0) {
               wx.showToast({
                 title: '无结果'
